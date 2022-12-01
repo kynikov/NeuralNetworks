@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetworks", "NeuralNetworks\NeuralNetworks.csproj", "{05B5E68E-582F-46C9-9D29-2C06490B6837}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetworksTests", "NeuralNetworksTests\NeuralNetworksTests.csproj", "{A178BD16-9322-4BAC-A0AC-B8118F255BD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{05B5E68E-582F-46C9-9D29-2C06490B6837}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05B5E68E-582F-46C9-9D29-2C06490B6837}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05B5E68E-582F-46C9-9D29-2C06490B6837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A178BD16-9322-4BAC-A0AC-B8118F255BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A178BD16-9322-4BAC-A0AC-B8118F255BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A178BD16-9322-4BAC-A0AC-B8118F255BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A178BD16-9322-4BAC-A0AC-B8118F255BD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

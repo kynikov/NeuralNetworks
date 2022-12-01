@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using System;
-using System.Collections.Generic;
-
 namespace NeuralNetworks
 {
     public class Neuron
@@ -12,23 +9,20 @@ namespace NeuralNetworks
         public List<double> Inputs { get; }
         public NeuronType NeuronType { get; }
         public double Output { get; private set; }
-        public double Delta { get; private set; }
-
         public Neuron(int inputCount, NeuronType type = NeuronType.Normal)
         {
             NeuronType = type;
             Weights = new List<double>();
+
+            for (int i = 0; i < inputCount; i++)
+            {
+                Weights.Add(1);
+            }
             Inputs = new List<double>();
         }
 
-
         public double FeedForward(List<double> inputs)
         {
-            for (int i = 0; i < inputs.Count; i++)
-            {
-                Inputs[i] = inputs[i];
-            }
-
             var sum = 0.0;
             for (int i = 0; i < inputs.Count; i++)
             {
@@ -43,7 +37,7 @@ namespace NeuralNetworks
             {
                 Output = sum;
             }
-
+            Output = Sigmoid(sum);
             return Output;
         }
 
